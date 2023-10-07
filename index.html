@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .flex-container{
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+    .container{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: repeat(748,1px);
+      grid-template-rows: repeat(748,1px);
+      background-color: #F0F1EC;
+    }
+    .red{
+      grid-area: 1/1/415/321;
+      background-color: #E72F24;
+    }
+    .yellow{
+      background-color: #F9D01E;
+      grid-area: -21/330/-1/528;
+    }
+    .black{
+      background-color: #232629;
+      grid-area: -1/537/-21/690;
+    }
+    .blue{
+      background-color: #004592;
+      grid-area: 424/699/554/749;
+    }
+    .gap{
+      background-color: #000;
+    }
+    .hoz1{
+      grid-area: 415/1/424/749;
+    }
+    .hoz2{
+      grid-area: 554/-1/573/-51;
+    }
+    .hoz3{
+      grid-area: -21/1/-30/-1;
+    }
+    .ver1{
+      grid-area: 1/321/749/330;
+    }
+    .ver2{
+      grid-area: -21/528/-1/537;
+    }
+    .ver3{
+      grid-area: 424/690/749/699 ;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="flex-container">
+    <div class="container">
+      <div class="red"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+      <div class="blue"></div>
+      <div class="gap hoz1"></div>
+      <div class="gap hoz2"></div>
+      <div class="gap hoz3"></div>
+      <div class="gap ver1"></div>
+      <div class="gap ver2"></div>
+      <div class="gap ver3"></div>
+    </div>
+  </div>
+</body>
+
+</html>
